@@ -1,10 +1,13 @@
 body {
+  background-image: url("../../assets/images/galaxy-3608029_1280.jpg");
   color: purple;
+  letter-spacing: 2px;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
 }
 
-.highlight {
-  background-color: wheat;
+.body-text {
+  color: wheat;
+  letter-spacing: 1px;
   display: inline;
 }
