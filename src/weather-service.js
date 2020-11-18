@@ -1,8 +1,8 @@
-export default class nasaAPI {
-  static async imageCall() {
+export default class WeatherService {
+  static async getWeather() {
     try {
       const response = await fetch(
-        `images-api.nasa.gov/search?keywords=${searchTerm}`
+        `https://api.nasa.gov/insight_weather/?api_key=${process.env.API_Key}&feedtype=json&ver=1.0`
       );
       if (!response.ok) {
         throw Error(response.statusText);
