@@ -1,0 +1,10 @@
+.test {
+  color: purple;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+.highlight {
+  background-color: wheat;
+  display: inline;
+}
