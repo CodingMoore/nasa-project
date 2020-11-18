@@ -1,8 +1,8 @@
 export default class NasaAPI {
-  static async imageCall() {
+  static async imageCall(searchTerm) {
     try {
       const response = await fetch(
-        `images-api.nasa.gov/search?keywords=${searchTerm}`
+        `https://images-api.nasa.gov/search?keywords=${searchTerm}`
       );
       if (!response.ok) {
         throw Error(response.statusText);

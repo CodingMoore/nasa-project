@@ -6,7 +6,8 @@ body {
   font-weight: bold;
 }
 
-.body-text {
+.body-text,
+#search-button {
   color: wheat;
   letter-spacing: 1px;
   display: inline;
