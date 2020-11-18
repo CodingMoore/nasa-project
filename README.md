@@ -1,14 +1,14 @@
-# Application name "Your App Name Here"
+# NASA Weather & Photo Search 
 
-#### Brief description of the project's purpose w/ date, e.g "Markdown.md Exercise for Epicodus, 10.18.20"
+#### Asynchronous Code & API Practice, Epicodus Wk. 6, 11. 18.2020
 
-#### Names of contributors - "By Jane Doe & Anne Done"
+#### By Danielle Thompson, Glen Buck, Randel Moore
 
 ## Description
-_{This is where you'll give as much information about the project as possible. Include purpose, usage, as much detail as needed to explain what the application does, etc.}_
+This project was a two-day, in-class project working with managing APIs and using asynchronous code. Features we focused on for our application included getting planetary weather data from NASA, as well as building a search engine for photos from NASA. 
 
 ## (Optional) Technologies used
-* _ES6 Javascript_
+* _Javascript_
 * _Bootstrap_
 * _jQuery_
 * _node.js_ 
@@ -17,8 +17,6 @@ _{This is where you'll give as much information about the project as possible. I
 * _ES Lint_
 * _Jest_
 * _Babel_
-
-_{Epicodus says: "Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out."}_
 
 ## Color theme
 * _#2E3C8C (Med-dark blue)_
@@ -46,52 +44,14 @@ _{Epicodus says: "Assume that I know you probably used HTML and CSS. If you did 
 ###### For Both Mac & Windows systems
 * _Once the project has been cloned to your computer, run `npm run start` to open a live session of the application from your preferred code editor. ((Visual Code Studio)[https://code.visualstudio.com/] was used and is recommended by the application builder.)_
 
-### Setup Instructions
-_For template reuse & new project set up..._
-* _Copy package.json & update 'name', and potentially license type._
-* _Copy webpack.config.js & update entry pt, output, plugins, modules._
-* _Copy .eslintrc._
-* _Copy .gitignore._
-* _(Optional) Copy .babelrc_
-* _Mimic src folder layout w/index.html & main.js on top level & css/ inside._
-* _*Note* Dist/ folder is not needed as it will autopopulate on npm._  
-
-_{Q's to ask in setup: Do person using an app need to run a server? How should they set up my databases? Is there other code this app depends on? Etc.}_
-
-*_For help building great READMEs, checkout the following articles..._
-* _[Medium's Kickass READMEs](https://medium.com/@meakaakka/%20a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3)._
-* _[Make a README](https://www.makeareadme.com/)._
-* _[Markdown Guide](https://www.markdownguide.org/cheat-sheet)._
-* _[Awesome READMEs](https://github.com/matiassingers/awesome-readme)._
-
-### Order of Operations for Building a Project: 
-- Make folder & do a `Git init` in Terminal.
-- Create project structure and/or copy over your template. 
-- Make first `git commit -m "Begin X project"`.
-- `npm init` or set up package.json if you haven't already.
-- Package.lock.json does *not* need to be moved, as it will be generated on npm.  
-- `npm install`
-- `npm run build` will get node_modules & dist folders downloaded.
-- Write specs out in README. 
-- Pick a spec to focus on. 
-- Build out test suite.
-- Build out functionality for given spec.
-- Purposefully fail test. 
-- Purposefully pass test (may require some debugging).
-- Refactor test and functionality as needed (purposefully fail, and purposefully pass as needed). 
-- Move on to next spec.
-- Build out the UI as a nice break, but contain it to the current backend functionality.
-
-- P.S. `npm run start` will open a LiveShare session! 
-
-_API Setup Instructions TODO_ 
-_When pushing projects to GH that require API keys, make sure to include...
-* instructions for other users to be able to clone your project & use their own API keys to see what's built. 
-* including all steps for getting a key - from the link to sign up for an account...//Lsn 4
-* to any steps to getting an API key... //also Lsn 4, maybe 5
-* to using a personal key with a .env file. //Lsn 8 
-* Adding a .env file with properly stored API variables
-* instructions for adding an API key is a requirement for this section's independent project. TODO TODO TODO
+### Setup Instructions for API Keys
+For this application, you will need to get an API key of your own to be able to open the application. 
+* Once the project is downloaded to your computer, please create a file called '.env' in the top level of the project's folder. 
+* Visit (this website)[] to set up your own account and to be assigned an API Key. 
+* Visit (Postman's website)[https://www.postman.com/downloads/] and download the application Postman. Postman will allow you to easily check your newly assigned API key is working.  
+* Once downloaded, open the Postman app, and enter the following website with your API key into the "GET" query bar: `https://images-api.nasa.gov/search?keywords=TODO`. Hit the 'Send' button. Make sure the response back from Postman shows a '200 code', which will mean your query was successful. _(If you need a visual representation of how to check your API is working correctly, follow along with the instructions provided on (this site)[https://www.learnhowtoprogram.com/intermediate-javascript/asynchrony-and-apis/testing-api-calls-with-postman].)_
+* Once you have gotten a 200 code response, take your API key and add it to your .env file in this format `API_KEY={your api key here}`. This .env file will keep your personal data (the API key) private. 
+* Now you can apply the API key to (x link)[], and the application should run. 
 
 ### Specs
 | Spec | Input | Output |
@@ -110,19 +70,7 @@ Code: hereIsSome.pseudoCode(inaction);
 Expect: thisFxn(w/this data).toEqual(this new data)
 
 ## (Optional) Known bugs
-
 _{I am Danielle's *bug* that needs fixing. I might impact this app by doing xyz. But you can do abc to get around me. Can do future fix me plz!}_
 
-### (Optional) Contact info
-
-_{I am Danielle's contact info. Or naw.}_
-
-#### (Optional) Support or contribution instructions
-
-_{Issues? Questions? Ideas? Concerns? Don't we all. Contact Jane Doe at xyz, or make a contribution to the code!}_
-
 ### Legal, or License 
-
-_{License info w/ copyright & date, license type (MIT, GPL, etc), list of contributors/company name}_
-
 _MIT_ Copyright (c) 2020 **_{List of contributors or company name}_**
