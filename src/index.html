@@ -1,80 +1,21 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <title>Template for HTML Pages w/ Bootstrap included</title>
-  <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all">
-  <link rel="stylesheet" href="css/styles.css" type="text/css" media="all">
-  <script src="js/jquery-3.5.1.js"></script>
-  <script src="js/scripts.js"></script>
+  <title>NASA project</title>
 </head>
 <body>
   <div class="container">
     <div class="jumbotron">
-      <h1>HTML Template</h1>
-      <h2>Smaller header</h2>
+      <h3>NASA Weather & Images</h3>
     </div>
-    <p>***FYI - the div class container is for Bootstrap stylesheet that is not yet in here. I think for 
-    responsivity. ***</p>
-    <p>Body body body. </p>
-    <ol><u>Here's a numbered list:</u>
-      <li>Item one</li>
-      <li>Item two</li>
-      <li>Item six</li>
-      <li>Item nine</li>
-    </ol>
-    <p></p>
-    <p>Don't forget to keep this order for all your docs when using Bootstrap:</p>
-    <ul>
-      <li> project repository
-      <li>   ├── css</li>
-      <li>   │   └── bootstrap.css</li>  
-      <li>   └── index.html </li>
-    </ul>
-    <p></p>
-    <p></p>
-    <p>
-      As per Epicodus' Lesson 53, "If you do want to explore JavaScript features, the easiest way to do this is to include the CDN link 
-      to Bootstrap's JavaScript file in the < head > tags of your HTML document:
-    </p>    
-    <img src="images/javascript-cdn-link.png" alt="A screenshot of how to include the CDN link to Bootstrap's JavaScript file.">
-    
-    <div class="test">
-    </p>
-    <p>Here's some purple body to show *my* css sheet. Look at me!</p>
-    <p>
-      <span class="highlight">Long blocks of text can be indented like this for easier reading. Either way shown in this example HTML 
-    doc works and is correctamundo.</span> And here's some fun ipsum! Doggo ipsum corgo boofers bork doggorino I am bekom 
-    fat long doggo, pupperino blop smol long doggo. Pats borking doggo long bois you are doing me a frighten, 
-    stop it fren fat boi stop it fren doggorino, h*ck mlem. Floofs vvv pupperino many pats, porgo maximum 
-    borkdrive. smol I am bekom fat length boy. Bork shooberino pupper shooberino, snoot.
-    </p>
-
-     <p>
-      Shoober borkf doge such treat super chub wow such tempt, lotsa pats fluffer shibe heckin. Super chub 
-    yapper big ol pupper shoober, such treat fluffer. Mlem snoot heckin angery woofer pupperino fat boi 
-    clouds puggorino the neighborhood pupper heckin good boys and girls, borking doggo long woofer bork 
-    h*ck sub woofer ur givin me a spook pupper. Heckin good boys and girls waggy wags you are doing me the 
-    shock sub woofer long woofer, smol borking doggo with a long snoot for pats most angery pupper I 
-    have ever seen porgo he made many woofs, blop snoot adorable doggo. Shoob long bois very good spot 
-    the neighborhood pupper corgo, doge heckin angery woofer doggo dat tungg tho heckin good boys, super 
-    chub porgo mlem. Sub woofer you are doing me a frighten blop wrinkler ur givin me a spook shoober, 
-    you are doin me a concern vvv smol borking doggo with a long snoot for pats. Shoober big ol you are 
-    doing me the shock corgo mlem, dat tungg tho pupper wow such tempt heckin good boys, smol 
-    very hand that feed shibe snoot.
-     </p>
-      Heckin angery woofer porgo floofs shooberino many pats big ol dat tungg tho, waggy wags fat boi smol 
-    borking doggo with a long snoot for pats heck long bois. Blep many pats boofers stop it fren pats heckin 
-    good boys, vvv you are doing me the shock doggorino vvv, you are doing me the shock length boy borkf doge. 
-    heckin good boys and girls wrinkler doggorino. Maximum borkdrive heckin good boys and girls porgo length 
-    boy heckin good boys puggo, much ruin diet puggo very hand that feed shibe borkdrive. Boof wow very biscit 
-    sub woofer corgo woofer, most angery pupper I have ever seen doge. Wow such tempt I am bekom fat blep sub 
-    woofer very taste wow pupper, wow very biscit the neighborhood pupper blep. Many pats doge shoober 
-    puggorino clouds borkf doge, corgo smol borking doggo with a long snoot for pats extremely cuuuuuute 
-    borkdrive shooberino.
-      </p>
-    </div>
-
-
+    <form id="nasa-form">
+      <div class="form-group">
+        <label for="search-term">Search here:</label>
+        <input id="search-term" class="form-control" type="text">
+      </div>
+      <button type="submit" class="btn">Search</button> 
+    </form>
+    <div class="test"></div>
   </div>
 </body>
 </html>
