@@ -6,7 +6,8 @@ import NasaAPI from "./images-service.js";
 
 function outputOptions(response) {
   if (response.collection) {
-    $("#image-display").html(`<img src="${response.collection.items[0].links[0].href}">`);
+    let rando1 = Math.floor(Math.random() * 100);
+    $("#image-display").html(`<img src="${response.collection.items[rando1].links[0].href}">`);
   } else {
     $("#image-display").html(`${response}`);
   }
@@ -24,15 +25,4 @@ $(document).ready(function () {
   });
 });
 
-// function getElements(response) {
-//   if (response.main) {
-//     $(".showHumidity").text(
-//       `The humidity in ${response.name} is ${response.main.humidity}%`
-//     );
-//     $(".showTemp").text(
-//       `The temperature in Kelvins is ${response.main.temp} degrees.`
-//     );
-//   } else {
-//     $(".showErrors").text(`There was an error: ${response}`);
-//   }
-// }
+// Math.floor(Math.random() * (Array.length -1));
