@@ -6,7 +6,7 @@ import NasaAPI from "./images-service.js";
 
 function outputOptions(response) {
   if (response.collection) {
-    $("#image-display").html(`${response.collection.items[0].data[0].nasa_id}`);
+    $("#image-display").html(`<img src="${response.collection.items[0].links[0].href}">`);
   } else {
     $("#image-display").html(`${response}`);
   }
