@@ -1,4 +1,4 @@
-export default class nasaAPI {
+export default class NasaAPI {
   static async imageCall() {
     try {
       const response = await fetch(
