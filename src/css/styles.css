@@ -7,7 +7,7 @@ body {
 }
 
 .body-text,
-#search-button {
+#search-button, #mars-weather {
   color: wheat;
   letter-spacing: 1px;
   display: inline;
