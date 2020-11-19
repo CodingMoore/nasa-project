@@ -21,7 +21,7 @@ function outputOptions(response) {
 
 function outputMars(response) {
   if (response[698]){
-    $("#mars-output").html(`current stat is ${response[698].AT.av}`);
+    $("#mars-output").html(`Median temperature on Mars is ${response[698].AT.av} degrees.`);
   } else {
     $("#mars-output").html(`${response}`);
   }

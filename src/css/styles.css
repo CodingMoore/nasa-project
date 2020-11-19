@@ -1,14 +1,29 @@
 body {
   background-image: url("../../assets/images/galaxy-3608029_1280.jpg");
-  color: purple;
-  letter-spacing: 2px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: bold;
+  letter-spacing: 8px;
 }
 
-.body-text,
+h1 {
+  color: purple;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#mars-styling, #search-styling {
+  background-color: purple;
+}
+
+#nasa-form,
 #search-button, #mars-weather {
   color: wheat;
   letter-spacing: 1px;
-  display: inline;
+  border: 2px solid gray;
+  box-shadow: gray;
+  padding-left: 20px;
+}
+
+#mars-output, #nasa-form, #mars-weather {
+  padding-bottom: 10px;
+}
+
+#image-display {
+  text-align: center;
 }

@@ -6,25 +6,25 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h1>NASA Weather & Images</h1>
+        <h1>NASA Images & Mars Weather</h1>
       </div>
       <form id="nasa-form">
-        <div class="form-group">
-          <p>Curious what the weather on Mars looks like? Click the button below to find out!</p>
+        <div class="form-group" id="mars-styling">
+          <p>Curious what the temperature on Mars is? Click the button below to find out!</p>
         </div>
-        <button type="submit" class="btn" id="mars-weather">Show Mars Weather</button>
+        <button type="submit" class="btn" id="mars-weather">SHOW MARS WEATHER</button>
         <div id="mars-output">
           <ul></ul>
         </div>
         <div class="form-group">
-          <label for="search-term" class="body-text">Search here:</label>
+          <label for="search-term" class="body-text" id="search-styling">Search here:</label>
           <input id="search-term" class="form-control" type="text" />
         </div>
-        <button type="submit" class="btn" id="search-button">Search</button>
+        <button type="submit" class="btn" id="search-button">SEARCH</button>
+        <div id="image-display">
+          <ul></ul>
+        </div>
       </form>
-      <div id="image-display">
-        <ul></ul>
-      </div>
     </div>
   </body>
 </html>
